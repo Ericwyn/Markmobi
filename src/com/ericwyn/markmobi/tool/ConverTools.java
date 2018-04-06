@@ -16,23 +16,6 @@ import java.io.PrintWriter;
  */
 public class ConverTools {
     private static Runtime run = Runtime.getRuntime();
-    public static void main(String[] args) {
-        if(checkKindleGen() && checkPandoc()){
-            BuildInfo convert = convert("/media/ericwyn/Work/notes/Leetcode.md");
-            if (convert.isBuildSuccess()){
-                System.out.println("build success");
-                System.out.println(convert.getPath());
-            }else {
-                System.out.println("build fail");
-                System.out.println();
-                System.out.println("----------------------- log -----------------------");
-                System.out.println();
-                System.out.println(convert.getMsg());
-            }
-        }else {
-            System.out.println("check KindleGen and Pandoc error");
-        }
-    }
 
     public static boolean checkKindleGen(){
         try {

@@ -34,7 +34,7 @@
         check Pandoc successful
         version : 1.16.0.2
         build success
-        /media/ericwyn/Work/Api_Lib/Interview-Notebook-master/notes/Java并发_convert.mobi
+        /media/Java并发_convert.mobi
         
         Process finished with exit code 0
         
